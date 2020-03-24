@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<style>
+.navbar {
+    width:100%;
+}
+.form-control{
+    width: 40%;
+}
+
+#home {
+    margin: 100px !important;
+    margin-top: 100px !important;
+}
+
+img {
+    width: 50%;
+    height:40%;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width:100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  h1,h4 {
+      width: 200px;
+      /* height: 150px; */
+  }
+  .form-control, .btn {
+    width: 200px;
+    margin-left: 0px !important;
+  }
+  .card {
+      margin: 5px;
+      font-size: 10px;
+      height: 250px;
+      width:300px;
+  }
+  #nuestrosservicios {
+      width:380px;
+  }
+  .card-title{
+    font-size: 15px;
+
+  }
+}
+
+</style>
+
+<header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar" style="background-color: #e3f2fd;">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-5" href="#home">Home</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#nuestrosservicios">Nuestros servicios <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#proveedores">Proveedores <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="form" action="https://www.freecodecamp.com/email-submit">
+            <input class="form-control mr-sm-2" type="email" name="email" placeholder="Search" required id="email" aria-label="Search">
+            <input type="submit" class="btn bg-light my-2 my-sm-0" type="submit" id="submit" ></a>
+          </form>
+        </div>
+      </nav>
+      <img src="mascarilla-1400x896.png" id="header-img" alt="" style="width: 10%; height:30%;">
+
+</header>
+
+<body>
+
+<div class="container mt-5">
+    <div class="container mt-5" id="home">
+        <h1> Mask Co.</h1>
+        <br>
+        <h4 >The best way to protect is to prevent.</h4>
+        <br>
+        <input class="form-control mt-3" type="search" id="email"  required placeholder="Introduce tu email para que recibas nuestro newsletter ;)" aria-label="Search">
+     <button class="btn mt-1" type="submit" style="background-color: #e3f2fd;">Enviar</button>
+     </div>
+     
+   <div class="d-flex justify-content-between mb-5" id="nuestrosservicios">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Organic</h5>
+          <h6 class="card-subtitle mb-2 text-muted">100% organic plastic</h6>
+          <p class="card-text">Our products are made with organic plastic. It's thye safest plastic for the planet</p>
+          <a href="#" class="card-link">More info</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">World wide shipping</h5>
+          <p class="card-text">We ship world wide -no restrictions, no delays. Anywhere you want and need.</p>
+          <a href="#" class="card-link">Order now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Customize</h5>
+          <p class="card-text">Fancy better styling ideas? We get it! You can customize the color and shape of our masks.</p>
+          <a href="#" class="card-link">Order customized maks</a>
+        </div>
+      </div>
+   </div>
+</div>
+
+<div class="container">
+   <div class="img" id="proveedores">
+       <img src="amazon-mascarillas-coronavirus.jpg" alt="">
+       <figcaption>Nuestras mascarillas cumplen con las normas y regulaciones para Equipos Medicos ISO 13485:2016</figcaption>
+   </div>
+   <br><br><br>
+    <iframe src="https://www.youtube.com/watch?v=MHQTIK0s_m" id="video"></iframe>
+
+   <div id="contacto">
+       23345, Salt Lake City. 011. UTAH.
+   </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
